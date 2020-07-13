@@ -7,9 +7,10 @@
 
 How to use
 ```    
-git clone https://github.com/ishita159/Finger-Recognition-OpenCV
+git clone https://github.com/aakashjhawar/Hand-Gesture-Recognition.git
+cd Hand-Gesture-Recognition
 ```
-Run the File hand_gesture_ex2.py
+Run the Finger_count.ipynb Jupyter Notebook
  
 ## Prerequisites
 
@@ -22,6 +23,9 @@ sudo apt-get install python-opencv
 
 * Strategy for counting fingers
     * Garb an ROI (Region of interest)
+		* Calculate a running average background value for 60 frames of video
+		* Once average value is found, then the hand can enter the ROI
+* Set a ROI and calculate the average running value for some amount of frames
 * Then once a hand enters, we can detect change and apply thresholding
 * Strategy for counting fingers
 		* Once the hand enters the ROI, we will use a Convel Hull to draw a polygon around the hand
@@ -38,7 +42,11 @@ sudo apt-get install python-opencv
 ## Working 
 
 #### Image-
-![Image of segmented hand region](https://github.com/ishita159/Finger-Recognition-OpenCV/blob/master/Capture.png)
+![Image of segmented hand region](https://github.com/aakashjhawar/Hand-Gesture-Recognition/blob/master/images/hand_convex.png)
 
+
+## Result
+
+![Four](https://github.com/aakashjhawar/Hand-Gesture-Recognition/blob/master/images/four.png)
 
 
